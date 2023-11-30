@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #232323;
+    padding: 20px;
+    text-align: center;
+    margin-top: 200px;
+}
+.pradzia{
+    margin-top: 20px;
+
+}
+
+.pradzia h5{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #4682b4;
+    color: white;
+    font-family: sans-serif ;
+    font-weight: 100;
+    
+}
+
+div{
+    text-align: center;
+    background-color: #4682b4;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+/* mygtukai */
+nav{ 
+    
+    border-style: none;
+   padding: 10px;
+    background-color: white;
+}
+.vienas {
+    margin-right: 60px;
+    color: #4682b4;
+    width: 100px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Pritaikyti perėjimą tarp spalvų */
+}
+button{
+    color: #4682b4;
+    background-color: white;
+}
+.color-button {
+    width: 100px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Pritaikyti perėjimą tarp spalvų */
+}
+
+.color-button:hover {
+    background-color: white; /* Pakeisti spalvą, kai vartotojas užveda pelės žymeklį */
+}
+.vienas:hover {
+    background-color: white; /* Pakeisti spalvą, kai vartotojas užveda pelės žymeklį */
+}
+
+
+/* Papildomos stiliaus taisyklės */
+#random-colors {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.empty-div {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    visibility: hidden;
+}
+
+#random-colors {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.empty-div {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    visibility: hidden;
+}
+.fade-out {
+    opacity: 0; 
+    pointer-events: none; 
+}
+
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 100px; 
+    }
+
+    .pradzia h5 {
+        font-size: 18px; 
+    }
+
+    .box {
+        width: calc(33.33% - 10px); 
+        height: 100px; 
+    }
+
+    .empty-div {
+        width: calc(33.33% - 10px);
+        height: 50px; 
+}
+}
